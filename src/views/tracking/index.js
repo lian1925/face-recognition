@@ -36,6 +36,7 @@ export default class index extends Component {
     var beginTime = +new Date();
     tracker = new tracking.ObjectTracker(["face"]);
     tracker.setStepSize(1.3);
+    console.log(7, this.refs.image);
     tracking.track(this.refs.image, tracker);
 
     tracker.on("track", event => {
