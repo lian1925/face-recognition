@@ -19,6 +19,16 @@ npm start
 
 Go to http://localhost:3000 in your browser
 
+## git page 托管
+
+```bash
+#  步骤1 git add并commit dist文件夹
+git add dist && git commit -m "Initial dist subtree commit"
+# 步骤2 使用 subtree 推送至 ph-pages分支
+git subtree push --prefix dist origin gh-pages
+
+```
+
 ## 参考
 
 Github 主流的 JavaScript 版本的人脸识别项目，整理如下：  

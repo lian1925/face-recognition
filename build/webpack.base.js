@@ -28,6 +28,7 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: "weights", to: "weights" },
       { from: "src/images", to: "images" }
+      // { from: "CNAME", to: "CNAME", toType: "file" }
     ]),
     new HtmlWebpackPlugin({
       filename: "index.html",
